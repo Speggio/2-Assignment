@@ -7,19 +7,16 @@ package it.unipd.mtss;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-        import java.security.InvalidParameterException;
+import java.security.InvalidParameterException;
 
-public class IntegerToRomanTest {
+public class TestIntegerToRoman {
 
     @Test
     public void convert1Test() {
-        // Arrange
         int num = 1;
 
-        // Act
         String roman = IntegerToRoman.convert(num);
 
-        // Assert
         assertEquals("I", roman);
     }
 
@@ -110,7 +107,9 @@ public class IntegerToRomanTest {
     @Test
     public void convert99Test() {
         int num = 99;
+
         String roman = IntegerToRoman.convert(num);
+
         assertEquals("XCIX", roman);
     }
 
@@ -158,10 +157,11 @@ public class IntegerToRomanTest {
     @Test
     public void convert399Test() {
         int num = 399;
+
         String roman = IntegerToRoman.convert(num);
+
         assertEquals("CCCXCIX", roman);
     }
-
 
 
     @Test
@@ -174,7 +174,6 @@ public class IntegerToRomanTest {
     }
 
 
-
     @Test
     public void convert742Test() {
         int num = 742;
@@ -183,8 +182,6 @@ public class IntegerToRomanTest {
 
         assertEquals("DCCXLII", roman);
     }
-
-
 
 
     @Test
@@ -200,8 +197,19 @@ public class IntegerToRomanTest {
     @Test
     public void convert999Test() {
         int num = 999;
+
         String roman = IntegerToRoman.convert(num);
+
         assertEquals("CMXCIX", roman);
+    }
+
+    @Test
+    public void convert1000Test() {
+        int num = 1000;
+
+        String roman = IntegerToRoman.convert(num);
+        
+        assertEquals("M", roman);
     }
 
 
@@ -232,19 +240,3 @@ public class IntegerToRomanTest {
         fail();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
