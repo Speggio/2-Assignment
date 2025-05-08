@@ -13,8 +13,8 @@ public class IntegerToRoman {
       throw new InvalidParameterException();
     }
 
-    int[] numbers = {1, 2, 4, 6};
-    String[] romans = {"I", "II", "IV", "VI"};
+    int[] numbers = {1, 2, 4, 6, 12, 27, 34, 49};
+    String[] romans = {"I", "II", "IV", "VI", "XII", "XXVII", "XXXIV", "XLIX"};
     String conv = "";
 
     for(int i=numbers.length-1; i>=0; i--) {
