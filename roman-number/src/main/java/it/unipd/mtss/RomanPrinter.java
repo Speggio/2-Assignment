@@ -19,6 +19,14 @@ public class RomanPrinter {
     return printAsciiArt(IntegerToRoman.convert(num));
   }
 
+  public static String print(String romanNumber) 
+  {
+    if (romanNumber == null) 
+    {
+        throw new NullPointerException("Input cannot be null");
+    }
+  }
+
   private static String printAsciiArt(String romanNumber){
     int height = 6;
     String[][] result = new String[height][romanNumber.length()];

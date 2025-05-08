@@ -12,16 +12,16 @@ import static org.junit.Assert.*;
 public class TestRomanPrinter 
 {
     @Test
-    public void testPrintOne() 
+    public void testPrint1() 
     {
 
         String result = RomanPrinter.print(1);
 
-        assertEquals(" _____ \n|_   |\n  | |  \n  | |  \n _| | \n|_|\n", result);
+        assertEquals(" _____ \n|_   |\n  | |  \n  | |  \n | | \n||\n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint2() 
     {
 
         String result = RomanPrinter.print(2);
@@ -30,25 +30,25 @@ public class TestRomanPrinter
     }
 
         @Test
-    public void testPrintOne() 
+    public void testPrint4() 
     {
 
         String result = RomanPrinter.print(4);
 
-        assertEquals(" _____  __      _\n|   | \\ \\    / /\n  | |    \\ \\  / / \n  | |     \\ \\/ /  \n _| |     \\  /   \n|_|     \\/    \n", result);
+        assertEquals(" _____  __      \n|   | \\ \\    / /\n  | |    \\ \\  / / \n  | |     \\ \\/ /  \n _| |     \\  /   \n||     \\/    \n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint6() 
     {
 
         String result = RomanPrinter.print(6);
 
-        assertEquals("__      __  _____ \n\\ \\    / / |_   |\n \\ \\  / /    | |  \n  \\ \\/ /     | |  \n   \\  /     _| | \n    \\/     |_|\n", result);
+        assertEquals("__      __  _____ \n\\ \\    / / |_   |\n \\ \\  / /    | |  \n  \\ \\/ /     | |  \n   \\  /     | | \n    \\/     ||\n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint12() 
     {
 
         String result = RomanPrinter.print(12);
@@ -57,7 +57,7 @@ public class TestRomanPrinter
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint27() 
     {
 
         String result = RomanPrinter.print(27);
@@ -66,25 +66,25 @@ public class TestRomanPrinter
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint34() 
     {
 
         String result = RomanPrinter.print(34);
 
-        assertEquals("__   __ __   __ __   __  _____  __      _\n\\ \\ / / \\ \\ / / \\ \\ / / |   | \\ \\    / /\n \\ V /   \\ V /   \\ V /    | |    \\ \\  / / \n  > <     > <     > <     | |     \\ \\/ /  \n / . \\   / . \\   / . \\   _| |     \\  /   \n// \\\\ // \\\\ // \\\\ |_|     \\/    \n", result);
+        assertEquals("__   __ __   __ __   __  _____  __      \n\\ \\ / / \\ \\ / / \\ \\ / / |   | \\ \\    / /\n \\ V /   \\ V /   \\ V /    | |    \\ \\  / / \n  > <     > <     > <     | |     \\ \\/ /  \n / . \\   / . \\   / . \\   _| |     \\  /   \n// \\\\ // \\\\ // \\\\ ||     \\/    \n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint49() 
     {
 
         String result = RomanPrinter.print(49);
 
-        assertEquals("__   __  _       _____  __   _\n\\ \\ / / | |     |   | \\ \\ / / \n \\ V /  | |       | |    \\ V /  \n  > <   | |       | |     > <    \n / . \\  | |___  | |   / . \\   \n// \\\\ || || // \\\\  \n", result);
+        assertEquals("__   __  _       _____  __   \n\\ \\ / / | |     |   | \\ \\ / / \n \\ V /  | |       | |    \\ V /  \n  > <   | |       | |     > <    \n / . \\  | |__  | |   / . \\   \n// \\\\ || || // \\\\  \n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint58() 
     {
 
         String result = RomanPrinter.print(58);
@@ -93,7 +93,7 @@ public class TestRomanPrinter
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint83() 
     {
 
         String result = RomanPrinter.print(83);
@@ -102,61 +102,61 @@ public class TestRomanPrinter
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint99() 
     {
 
         String result = RomanPrinter.print(99);
 
-        assertEquals("__   __   _____   _____  __   _\n\\ \\ / /  / ____| |   | \\ \\ / / \n \\ V /  | |        | |    \\ V /  \n  > <   | |        | |     > <    \n / . \\  | |___   | |   / . \\   \n// \\\\  \\| || // \\\\  \n", result);
+        assertEquals("__   __   _____   _____  __   \n\\ \\ / /  / ____| |   | \\ \\ / / \n \\ V /  | |        | |    \\ V /  \n  > <   | |        | |     > <    \n / . \\  | |__   | |   / . \\   \n// \\\\  \\| || // \\\\  \n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint116() 
     {
 
         String result = RomanPrinter.print(116);
 
-        assertEquals("  _____  __   __ __      __  _____ \n / ___| \\ \\ / / \\ \\    / / |   |\n| |       \\ V /   \\ \\  / /    | |  \n| |        > <     \\ \\/ /     | |  \n| |___   / . \\     \\  /     | | \n \\| // \\\\     \\/     ||\n", result);
+        assertEquals("  _____  __   __ __      __  _____ \n / __| \\ \\ / / \\ \\    / / |   |\n| |       \\ V /   \\ \\  / /    | |  \n| |        > <     \\ \\/ /     | |  \n| |__   / . \\     \\  /     | | \n \\| // \\\\     \\/     ||\n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint147() 
     {
 
         String result = RomanPrinter.print(147);
 
-        assertEquals("  _____  __   __  _      __      __  _____   _____ \n / ___| \\ \\ / / | |     \\ \\    / / |   | |   |\n| |       \\ V /  | |      \\ \\  / /    | |     | |  \n| |        > <   | |       \\ \\/ /     | |     | |  \n| |___   / . \\  | |____    \\  /     | |   | | \n \\| // \\\\ ||     \\/     || ||\n", result);
+        assertEquals("  _____  __   __  _      __      __  _____   _____ \n / __| \\ \\ / / | |     \\ \\    / / |   | |   |\n| |       \\ V /  | |      \\ \\  / /    | |     | |  \n| |        > <   | |       \\ \\/ /     | |     | |  \n| |__   / . \\  | |____    \\  /     | |   | | \n \\| // \\\\ ||     \\/     || ||\n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint274() 
     {
 
         String result = RomanPrinter.print(274);
 
-        assertEquals("  _____    _____   _      __   __ __   __  _____  __      _\n / ____|  / ____| | |     \\ \\ / / \\ \\ / / |   | \\ \\    / /\n| |      | |      | |      \\ V /   \\ V /    | |    \\ \\  / / \n| |      | |      | |       > <     > <     | |     \\ \\/ /  \n| |___  | |____  | |____  / . \\   / . \\   | |     \\  /   \n \\|  \\| || // \\\\ // \\\\ ||     \\/    \n", result);
+        assertEquals("  _____    _____   _      __   __ __   __  _____  __      \n / ____|  / ____| | |     \\ \\ / / \\ \\ / / |   | \\ \\    / /\n| |      | |      | |      \\ V /   \\ V /    | |    \\ \\  / / \n| |      | |      | |       > <     > <     | |     \\ \\/ /  \n| |__  | |____  | |____  / . \\   / . \\   | |     \\  /   \n \\|  \\| || // \\\\ // \\\\ ||     \\/    \n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint353() 
     {
 
         String result = RomanPrinter.print(353);
 
-        assertEquals("  _____    _____    _____   _       _____   _____   _____ \n / ___|  / ____|  / ____| | |     |   | |   | |   |\n| |      | |      | |      | |       | |     | |     | |  \n| |      | |      | |      | |       | |     | |     | |  \n| |___  | |____  | |____  | |____  | |   | |   | | \n \\|  \\|  \\| || || || |_|\n", result);
+        assertEquals("  _____    _____    _____   _       _____   _____   _____ \n / __|  / ____|  / ____| | |     |   | |   | |   |\n| |      | |      | |      | |       | |     | |     | |  \n| |      | |      | |      | |       | |     | |     | |  \n| |__  | |____  | |____  | |____  | |   | |   | | \n \\|  \\|  \\| || || || |_|\n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint399() 
     {
 
         String result = RomanPrinter.print(399);
 
-        assertEquals("  _____    _____    _____  __   __   _____   _____  __   _\n / ____|  / ____|  / ____| \\ \\ / /  / ____| |   | \\ \\ / / \n| |      | |      | |       \\ V /  | |        | |    \\ V /  \n| |      | |      | |        > <   | |        | |     > <   \n| |___  | |____  | |____   / . \\  | |____   | |   / . \\  \n \\|  \\|  \\| // \\\\  \\| || // \\_\\ \n", result);
+        assertEquals("  _____    _____    _____  __   __   _____   _____  __   \n / ____|  / ____|  / ____| \\ \\ / /  / ____| |   | \\ \\ / / \n| |      | |      | |       \\ V /  | |        | |    \\ V /  \n| |      | |      | |        > <   | |        | |     > <   \n| |__  | |____  | |____   / . \\  | |____   | |   / . \\  \n \\|  \\|  \\| // \\\\  \\| || // \\_\\ \n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint501() 
     {
 
         String result = RomanPrinter.print(501);
@@ -165,37 +165,37 @@ public class TestRomanPrinter
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint742() 
     {
 
         String result = RomanPrinter.print(742);
 
-        assertEquals(" _____     _____    _____  __   __  _       _____   _____ \n|  __ \\   / ___|  / ____| \\ \\ / / | |     |   | |   |\n| |  | | | |      | |       \\ V /  | |       | |     | |  \n| |  | | | |      | |        > <   | |       | |     | |  \n| || | | |___  | |____   / . \\  | |____  | |   | | \n|/   \\|  \\| // \\\\ || || ||\n", result);
+        assertEquals(" _____     _____    _____  __   __  _       _____   _____ \n|  __ \\   / __|  / ____| \\ \\ / / | |     |   | |   |\n| |  | | | |      | |       \\ V /  | |       | |     | |  \n| |  | | | |      | |        > <   | |       | |     | |  \n| || | | |__  | |____   / . \\  | |____  | |   | | \n|/   \\|  \\| // \\\\ || || ||\n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint888() 
     {
 
         String result = RomanPrinter.print(888);
 
-        assertEquals(" _____     _____    _____    _____   _      __   __ __   __ __   __ __      __  _____   _____   _____ \n|  __ \\   / ___|  / ____|  / ____| | |     \\ \\ / / \\ \\ / / \\ \\ / / \\ \\    / / |   | |   | |   | \n| |  | | | |      | |      | |      | |      \\ V /   \\ V /   \\ V /   \\ \\  / /    | |     | |     | |   \n| |  | | | |      | |      | |      | |       > <     > <     > <     \\ \\/ /     | |     | |     | |   \n| || | | |___  | |____  | |____  | |____  / . \\   / . \\   / . \\     \\  /     | |   | |   | |  \n|/   \\|  \\|  \\| || // \\\\ // \\\\ // \\\\     \\/     || || ||\n", result);
+        assertEquals(" _____     _____    _____    _____   _      __   __ __   __ __   __ __      __  _____   _____   _____ \n|  __ \\   / __|  / ____|  / ____| | |     \\ \\ / / \\ \\ / / \\ \\ / / \\ \\    / / |   | |   | |   | \n| |  | | | |      | |      | |      | |      \\ V /   \\ V /   \\ V /   \\ \\  / /    | |     | |     | |   \n| |  | | | |      | |      | |      | |       > <     > <     > <     \\ \\/ /     | |     | |     | |   \n| || | | |__  | |____  | |____  | |____  / . \\   / . \\   / . \\     \\  /     | |   | |   | |  \n|/   \\|  \\|  \\| || // \\\\ // \\\\ // \\\\     \\/     || || ||\n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint999() 
     {
         String result = RomanPrinter.print(999);
 
-        assertEquals("  _____  __  __  __   __   _____   _____  __   _\n / ____| |  \\/  | \\ \\ / /  / ____| |   | \\ \\ / / \n| |      | \\  / |  \\ V /  | |        | |    \\ V /  \n| |      | |\\/| |   > <   | |        | |     > <   \n| |___  | |  | |  / . \\  | |____   | |   / . \\  \n \\| ||  || // \\\\  \\| || // \\_\\ \n", result);
+        assertEquals("  _____  __  __  __   __   _____   _____  __   \n / ____| |  \\/  | \\ \\ / /  / ____| |   | \\ \\ / / \n| |      | \\  / |  \\ V /  | |        | |    \\ V /  \n| |      | |\\/| |   > <   | |        | |     > <   \n| |__  | |  | |  / . \\  | |____   | |   / . \\  \n \\| ||  || // \\\\  \\| || // \\_\\ \n", result);
     }
 
     @Test
-    public void testPrintOne() 
+    public void testPrint1000() 
     {
         String result = RomanPrinter.print(1000);
 
-        assertEquals("__  _\n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n||  |_|\n", result);
+        assertEquals("__  \n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n||  ||\n", result);
     }
 
 
@@ -225,6 +225,3 @@ public class TestRomanPrinter
     }
 
 }
-
-
-
