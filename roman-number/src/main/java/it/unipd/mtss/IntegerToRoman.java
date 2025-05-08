@@ -5,9 +5,24 @@
 
 package it.unipd.mtss;
 
+import java.security.InvalidParameterException;
+
 public class IntegerToRoman {
-  public static String convert(int number){
-  // TODO
-  return null;
+  public static String convert(int num) {
+    if(num <=0) {
+      throw new InvalidParameterException();
+    }
+
+    int[] numbers = {1, 2, 4, 6};
+    String[] romans = {"I", "II", "IV", "VI"};
+    String conv = "";
+
+    for(int i=numbers.length-1; i>=0; i--) {
+      while(num >= numbers[i]) {
+        conv += romans[i];
+        num -= numbers[i];
+      }
+    }
+    return conv;
   }
 }
