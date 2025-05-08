@@ -7,13 +7,62 @@ package it.unipd.mtss;
 
 public class RomanPrinter {
 
-  private static final String[] I_ASCII_ART = {"  _____  ", " |_   | ", "   | |   ", "   | |   ", "  _| |  ", " |_| "};
-  private static final String[] V_ASCII_ART = {" __      __ ", " \\ \\    / / ", "  \\ \\  / /  ", "   \\ \\/ /   ", "    \\  /    ", "     \\/     "};
-  private static final String[] X_ASCII_ART = {" __   __ ", " \\ \\ / / ", "  \\ V /  ", "   > <   ", "  / . \\  ", " // \\\\ "};
-  private static final String[] L_ASCII_ART = {"  _       ", " | |      ", " | |      ", " | |      ", " | |____  ", " || "};
-  private static final String[] C_ASCII_ART = {"   _____  ", "  / ___| ", " | |      ", " | |      ", " | |___  ", "  \\_| "};
-  private static final String[] D_ASCII_ART = {"  _____   ", " |  __ \\  ", " | |  | | ", " | |  | | ", " | || | ", " |_/ "};
-  private static final String[] M_ASCII_ART = {"  __  __  ", " |  \\/  | ", " | \\  / | ", " | |\\/| | ", " | |  | | ", " ||  || "};
+  private static final String[] I_ASCII_ART = {
+            " _____  ",
+            "|_   _| ",
+            "  | |   ",
+            "  | |   ",
+            " _| |_  ",
+            "|_____| "};
+
+  private static final String[] V_ASCII_ART = {
+            "__      __ ",
+            "\\ \\    / / ",
+            " \\ \\  / /  ",
+            "  \\ \\/ /   ",
+            "   \\  /    ",
+            "    \\/     "};
+
+  private static final String[] X_ASCII_ART = {
+            "__   __ ",
+            "\\ \\ / / ",
+            " \\ V /  ",
+            "  > <   ",
+            " / . \\  ",
+            "/_/ \\_\\ "};
+
+  private static final String[] L_ASCII_ART = {
+            " _       ",
+            "| |      ",
+            "| |      ",
+            "| |      ",
+            "| |____  ",
+            "|______| "};
+
+  private static final String[] C_ASCII_ART = {
+            "  _____  ",
+            " / ____| ",
+            "| |      ",
+            "| |      ",
+            "| |____  ",
+            " \\_____| "};
+
+  private static final String[] D_ASCII_ART = {
+            " _____   ",
+            "|  __ \\  ",
+            "| |  | | ",
+            "| |  | | ",
+            "| |__| | ",
+            "|_____/  "};
+
+  private static final String[] M_ASCII_ART = {
+            " __  __  ",
+            "|  \\/  | ",
+            "| \\  / | ",
+            "| |\\/| | ",
+            "| |  | | ",
+            "|_|  |_| "}; 
+            
 
   public static String print(int num){
     return printAsciiArt(IntegerToRoman.convert(num));
