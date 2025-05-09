@@ -26,7 +26,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(2);
 
-        assertEquals(" _____   _____ \n|_   _| |_   _|\n  | |     | |  \n  | |     | |  \n _| |_   _| |_ \n|_____| |_____|\n", result);
+        assertEquals(" _____  _____ \n|_   _||_   _|\n  | |    | |  \n  | |    | |  \n _| |_  _| |_ \n|_____||_____|\n", result);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(4);
 
-        assertEquals(" _____  __      __\n|_   _| \\ \\    / /\n  | |    \\ \\  / / \n  | |     \\ \\/ /  \n _| |_     \\  /   \n|_____|     \\/    \n", result);
+        assertEquals(" _____ __      __\n|_   _|\\ \\    / /\n  | |   \\ \\  / / \n  | |    \\ \\/ /  \n _| |_    \\  /   \n|_____|    \\/    \n", result);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(6);
 
-        assertEquals("__      __  _____ \n\\ \\    / / |_   _|\n \\ \\  / /    | |  \n  \\ \\/ /     | |  \n   \\  /     _| |_ \n    \\/     |_____|\n", result);
+        assertEquals("__      __ _____ \n\\ \\    / /|_   _|\n \\ \\  / /   | |  \n  \\ \\/ /    | |  \n   \\  /    _| |_ \n    \\/    |_____|\n", result);
     }
 
     @Test
@@ -53,7 +53,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(12);
 
-        assertEquals("__   __  _____   _____ \n\\ \\ / / |_   _| |_   _|\n \\ V /    | |     | |  \n  > <     | |     | |  \n / . \\   _| |_   _| |_ \n/_/ \\_\\ |_____| |_____|\n", result);
+        assertEquals("__   __ _____  _____ \n\\ \\ / /|_   _||_   _|\n \\ V /   | |    | |  \n  > <    | |    | |  \n / . \\  _| |_  _| |_ \n/_/ \\_\\|_____||_____|\n", result);
     }
 
     @Test
@@ -62,7 +62,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(27);
 
-        assertEquals("__   __ __   __ __      __  _____   _____ \n\\ \\ / / \\ \\ / / \\ \\    / / |_   _| |_   _|\n \\ V /   \\ V /   \\ \\  / /    | |     | |  \n  > <     > <     \\ \\/ /     | |     | |  \n / . \\   / . \\     \\  /     _| |_   _| |_ \n/_/ \\_\\ /_/ \\_\\     \\/     |_____| |_____|\n", result);
+        assertEquals("__   ____   ____      __ _____  _____ \n\\ \\ / /\\ \\ / /\\ \\    / /|_   _||_   _|\n \\ V /  \\ V /  \\ \\  / /   | |    | |  \n  > <    > <    \\ \\/ /    | |    | |  \n / . \\  / . \\    \\  /    _| |_  _| |_ \n/_/ \\_\\/_/ \\_\\    \\/    |_____||_____|\n", result);
     }
 
     @Test
@@ -71,7 +71,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(34);
 
-        assertEquals("__   __ __   __ __   __  _____  __      __\n\\ \\ / / \\ \\ / / \\ \\ / / |_   _| \\ \\    / /\n \\ V /   \\ V /   \\ V /    | |    \\ \\  / / \n  > <     > <     > <     | |     \\ \\/ /  \n / . \\   / . \\   / . \\   _| |_     \\  /   \n/_/ \\_\\ /_/ \\_\\ /_/ \\_\\ |_____|     \\/    \n", result);
+        assertEquals("__   ____   ____   __ _____ __      __\n\\ \\ / /\\ \\ / /\\ \\ / /|_   _|\\ \\    / /\n \\ V /  \\ V /  \\ V /   | |   \\ \\  / / \n  > <    > <    > <    | |    \\ \\/ /  \n / . \\  / . \\  / . \\  _| |_    \\  /   \n/_/ \\_\\/_/ \\_\\/_/ \\_\\|_____|    \\/    \n", result);
     }
 
     @Test
@@ -80,7 +80,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(49);
 
-        assertEquals("__   __  _       _____  __   __\n\\ \\ / / | |     |_   _| \\ \\ / / \n \\ V /  | |       | |    \\ V /  \n  > <   | |       | |     > <    \n / . \\  | |____  _| |_   / . \\   \n/_/ \\_\\ |_____| |_____| /_/ \\_\\  \n", result);
+        assertEquals("__   __ _       _____ __   __\n\\ \\ / /| |     |_   _|\\ \\ / /\n \\ V / | |       | |   \\ V / \n  > <  | |       | |    > <  \n / . \\ | |____  _| |_  / . \\ \n/_/ \\_\\|______||_____|/_/ \\_\\\n", result);
     }
 
     @Test
@@ -89,7 +89,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(58);
 
-        assertEquals(" _      __      __  _____   _____   _____ \n| |     \\ \\    / / |_   _| |_   _| |_   _|\n| |      \\ \\  / /    | |     | |     | |  \n| |       \\ \\/ /     | |     | |     | |  \n| |____    \\  /     _| |_   _| |_   _| |_ \n|_____|     \\/     |_____| |_____| |_____|\n", result);
+        assertEquals(" _      __      __ _____  _____  _____ \n| |     \\ \\    / /|_   _||_   _||_   _|\n| |      \\ \\  / /   | |    | |    | |  \n| |       \\ \\/ /    | |    | |    | |  \n| |____    \\  /    _| |_  _| |_  _| |_ \n|______|    \\/    |_____||_____||_____|\n", result);
     }
 
     @Test
@@ -98,7 +98,7 @@ public class TestRomanPrinter
 
         String result = RomanPrinter.print(83);
 
-        assertEquals(" _      __   __ __   __ __   __  _____   _____   _____ \n| |     \\ \\ / / \\ \\ / / \\ \\ / / |_   _| |_   _| |_   _|\n| |      \\ V /   \\ V /   \\ V /    | |     | |     | |  \n| |       > <     > <     > <     | |     | |     | |  \n| |____  / . \\   / . \\   / . \\   _| |_   _| |_   _| |_ \n|_____| /_/ \\_\\ /_/ \\_\\ /_/ \\_\\ |_____| |_____| |_____|\n", result);
+        assertEquals(" _       __   __ __   __ __   __  _____   _____   _____ \n| |      \\ \\ / / \\ \\ / / \\ \\ / / |_   _| |_   _| |_   _|\n| |       \\ V /   \\ V /   \\ V /    | |     | |     | |  \n| |        > <     > <     > <     | |     | |     | |  \n| |____   / . \\   / . \\   / . \\   _| |_   _| |_   _| |_ \n|______| /_/ \\_\\ /_/ \\_\\ /_/ \\_\\ |_____| |_____| |_____|\n", result);
     }
 
     @Test
@@ -195,7 +195,7 @@ public class TestRomanPrinter
     {
         String result = RomanPrinter.print(1000);
 
-        assertEquals("__  __\n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n|_|  |_|\n", result);
+        assertEquals(" __  __ \n|  \\/  |\n| \\  / |\n| |\\/| |\n| |  | |\n|_|  |_|\n", result);
     }
 
 
