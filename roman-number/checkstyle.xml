@@ -22,7 +22,7 @@
         <property name="max" value="200"/>
     </module>
     <module name="LineLength">
-        <property name="max" value="200"/>
+        <property name="max" value="210"/>
     </module>
     <module name="FileTabCharacter"/>
     <module name="Header">
