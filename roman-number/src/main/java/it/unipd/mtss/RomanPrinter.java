@@ -5,9 +5,17 @@
 
 package it.unipd.mtss;
 
-public class RomanPrinter {
+public class RomanPrinter 
+{
+    public static String print(int num)
+    {
+        return printAsciiArt(IntegerToRoman.convert(num));
+    }
 
-  private static final String[] I_ASCII_ART = {
+    private static String printAsciiArt(String romanNumber)
+    {
+
+        String[] cifra_I={
             " _____ ",
             "|_   _|",
             "  | |  ",
@@ -15,7 +23,8 @@ public class RomanPrinter {
             " _| |_ ",
             "|_____|"};
 
-  private static final String[] V_ASCII_ART = {
+
+        String[] cifra_V={
             "__      __",
             "\\ \\    / /",
             " \\ \\  / / ",
@@ -23,7 +32,8 @@ public class RomanPrinter {
             "   \\  /   ",
             "    \\/    "};
 
-  private static final String[] X_ASCII_ART = {
+
+        String[] cifra_X={
             "__   __",
             "\\ \\ / /",
             " \\ V / ",
@@ -31,7 +41,8 @@ public class RomanPrinter {
             " / . \\ ",
             "/_/ \\_\\"};
 
-  private static final String[] L_ASCII_ART = {
+
+        String[] cifra_L={
             " _      ",
             "| |     ",
             "| |     ",
@@ -39,7 +50,8 @@ public class RomanPrinter {
             "| |____ ",
             "|______|"};
 
-  private static final String[] C_ASCII_ART = {
+
+        String[] cifra_C={
             "  _____ ",
             " / ____|",
             "| |     ",
@@ -47,7 +59,7 @@ public class RomanPrinter {
             "| |____ ",
             " \\_____|"};
 
-  private static final String[] D_ASCII_ART = {
+        String[] cifra_D={
             " _____  ",
             "|  __ \\ ",
             "| |  | |",
@@ -55,54 +67,55 @@ public class RomanPrinter {
             "| |__| |",
             "|_____/ "};
 
-  private static final String[] M_ASCII_ART = {
+        String[] cifra_M={
             " __  __ ",
             "|  \\/  |",
             "| \\  / |",
             "| |\\/| |",
             "| |  | |",
             "|_|  |_|"}; 
-            
 
-  public static String print(int num){
-    return printAsciiArt(IntegerToRoman.convert(num));
-  }
+        StringBuilder risultato= new StringBuilder();
 
-  private static String printAsciiArt(String romanNumber){
-    int height = 6;
-    String[][] result = new String[height][romanNumber.length()];
-    int count = 0;
+        for(int i=0;i<6;i++)
+        {
+            for(int ii=0;ii<romanNumber.length();ii++)    
+            {
+                switch(Character.toString(romanNumber.charAt(ii)))
+                {
+                    case "I":
+                        risultato.append(cifra_I[i]);
+                        break;
 
-    for(Character c : romanNumber.toCharArray()) {
-      switch(c) {
-        case 'I':   result[count] = I_ASCII_ART;
-          break;
-        case 'V':   result[count] = V_ASCII_ART;
-          break;
-        case 'X':   result[count] = X_ASCII_ART;
-          break;
-        case 'L':   result[count] = L_ASCII_ART;
-          break;
-        case 'C':   result[count] = C_ASCII_ART;
-          break;
-        case 'D':   result[count] = D_ASCII_ART;
-          break;
-        case 'M':   result[count] = M_ASCII_ART;
-          break;
-      }
-      count++;
+                    case "V":
+                        risultato.append(cifra_V[i]);
+                        break;
+
+                    case "X":
+                        risultato.append(cifra_X[i]);
+                        break;
+
+                    case "L":
+                        risultato.append(cifra_L[i]);
+                        break;
+
+                    case "C":
+                        risultato.append(cifra_C[i]);
+                        break;
+
+                    case "D":
+                        risultato.append(cifra_D[i]);
+                        break;
+
+                    case "M":
+                        risultato.append(cifra_M[i]);
+                        break;
+                }
+            }
+
+            risultato.append("\n");
+        }
+
+        return risultato.toString();
     }
-
-    String printable = "";
-    for (int i=0; i<height; i++) {
-      for (int j=0; j<romanNumber.length(); j++) {
-        printable += result[j][i];
-      }
-      printable += "\n";
-    }
-
-    System.out.println(printable);
-
-    return printable;
-  }
 }
